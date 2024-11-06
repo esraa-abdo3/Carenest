@@ -1,0 +1,260 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    color: #fafafafa;
+    height: 100%;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.cont {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .cont {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cont {
+        width: 950px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cont {
+        width: 1170px;
+    }
+}
+
+.Navbar {
+ 
+    padding: 7px 0px;
+}
+
+.Navbar  .cont  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar nav .logo img {
+    width: 216.33px;
+    height: 50px;
+}
+
+.Navbar nav .Navbar-btn {
+    gap: 18px;
+    display: flex;
+}
+
+.Navbar-btn button {
+    transition: 0.3s;
+    background-color: white;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    border: 3px solid #E388C4;
+    border-radius: 10px;
+    padding: 10px 20px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.Navbar-btn button a {
+    text-decoration: none;
+    color: #E388C4;
+}
+.Navbar-btn button:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.Navbar-btn button.active {
+    background-color: #E388C4;
+    color: white;
+}
+
+.Navbar-btn button.active a {
+    color: white;
+}
+
+.cat .cont {
+    padding: 15px 0;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cat .cont a {
+    font-size: 19px;
+    position: relative;
+    transition: 0.3s;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #444157;
+}
+
+@media(max-width:776px) {
+   .Navbar nav .Navbar-btn{
+        display: none;
+    }
+    .Navbar {
+        padding: 10px 15px;
+    }
+
+
+
+    .Navbar nav .logo img {
+        width: 120px;
+        height: 50px;
+    }
+
+    .Navbar {
+        margin: 0;
+    }
+
+    .cat {
+        display: none;
+    }
+}
+
+.cat .cont a:hover:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 1.5px;
+    background-color:#0093d8;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: scale-in 0.3s forwards;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+}
+
+@keyframes scale-in {
+    to {
+        transform: scaleX(1); 
+    }
+}
+
+.categories {
+    display: flex;
+    padding: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: -200px; 
+    height: 100%;
+    width: 350px;
+    background-color: white;
+    z-index: 1000;
+    opacity: 0; 
+}
+
+.categories.show {
+    transform: translateX(200px); 
+    opacity: 1; 
+}
+
+
+.categories .cont .all {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.categories .cont a {
+    color: #444157;
+    font-size: 19px;
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+
+.categories .cont a:hover {
+    color: #E388C4; 
+}
+
+.menu-icon {
+    display: none; 
+}
+.categories .Navbar-btn {
+    padding: 15px;
+    gap: 25px;
+    display: flex;
+}
+/* .categories .Navbar nav .Navbar-btn {
+    gap: 30px;
+    display: flex;
+} */
+
+.categories .Navbar-btn button {
+    transition: 0.3s;
+    background-color: white;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    border: 3px solid #E388C4;
+    border-radius: 10px;
+    padding: 7px 11px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.categories .Navbar-btn button a {
+    text-decoration: none;
+    color: #E388C4;
+}
+.categories .Navbar-btn button:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.categories .Navbar-btn button.active {
+    background-color: #E388C4;
+    color: white;
+}
+
+.categories .Navbar-btn button.active a {
+    color: white;
+}
+
+@media(max-width: 776px) {
+    .menu-icon {
+        display: block; 
+    }
+
+    .Navbar {
+        padding: 10px 15px;
+    }
+}

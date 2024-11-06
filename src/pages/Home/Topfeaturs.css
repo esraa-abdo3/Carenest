@@ -9,14 +9,13 @@ body{
    overflow: hidden;
 
 }
-
 .baby-tools1 {
     position: absolute;
     right: 0;
 }
 .baby-tools2{
     position: absolute;
-    bottom:-60% ;
+    bottom:-55% ;
     left: 5%;
 }
 .baby-tools3{
@@ -25,6 +24,7 @@ body{
     left: 5%;
 
 }
+
 .baby-tools1 img,
 .baby-tools2 img,
 .baby-tools3 img{
@@ -87,121 +87,17 @@ body{
     transition-delay: 0.9s;
 }
 
-@media(max-width: 992px) {
-    .top {
-        overflow-x: hidden;
-    }
-
-    .top .cont {
-        padding-top: 50px;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 30px; 
-        justify-content: center;
-        align-items: start; 
-    }
-
-    .top .cont .featur-1 {
-        align-items: center;
-       width: 350px;
-    }
 
 
 
-    .baby-tools2 {
-        position: absolute;
-        bottom: -85%;
-    }
-
-    .baby-tools3 {
-        z-index: 1000;
-        position: absolute;
-        bottom: -5%;
-    }
-}
-
-@media(max-width: 802px) {
-    .top .cont {
-        padding-top: 50px;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-        gap: 15px;
-        justify-content: center;
-        align-items: start;
-    }
-
-    .top .cont .featur-1 {
-      width: 350px;
-        align-items: center;
-    }
-
-    .top .cont .featur-1:nth-child(3) {
-        align-self: center;
-    }
-
-    .baby-tools2 {
-        position: absolute;
-        bottom: -85%;
-    }
-
-    .baby-tools3 {
-        display: none;
-    }
-}
-
-@media(max-width: 767px) {
-    .top .cont {
-        overflow-x: hidden;
-        padding-top: 50px;
+/* @media (min-width: 300px) and (max-width:747px) {
+    .top .cont{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 10px;
     }
-
-    .top .cont .featur-1 {
-        
-        align-items: center;
-    }
-
-    .top .cont .featur-1:nth-child(3) {
-        align-self: center;
-    }
-
-    .baby-tools1 {
-        width: 50px;
-        bottom: 0px;
-        right: 20px;
-    }
-
-    .baby-tools2 {
-        z-index: 1000;
-        position: absolute;
-        bottom: -135%;
-    }
-
-    .baby-tools3 {
-        display: none;
-    }
-}
-
-@media (min-width: 796px) and (max-width: 1199px) {
-    .featur-1 {
-        margin-left: 20px; 
-    }
-
-    .baby-tools2 {
-        position: absolute;
-        bottom: -105%;
-    }
-
-    .baby-tools3 {
-        z-index: 100;
-        position: absolute;
-        bottom: -120px;
-    }
-}
-@media (min-width: 312px) and (max-width: 508px) {
 
     .baby-tools1  img{
         width: 40px;
@@ -211,7 +107,7 @@ body{
 
 
 
-        bottom: -180px;
+        bottom: 80px;
 
         right: 30px;
         z-index: 1;
@@ -220,61 +116,122 @@ body{
     .baby-tools2 {
         z-index: 100;
         position: absolute;
-        bottom: -130%;
+        bottom: -65%;
     }
 
     .baby-tools3 {
         display: none;
     }
 }
-@media (min-width: 509px) and (max-width: 765px) {
+ @media(min-width:748px) and(max-width:800px){
     .baby-tools1  img{
-        width: 50px;
+        width: 40px;
     }
-    .baby-tools1 {
+  
+
+  .baby-tools2{
+    width: 10px;
+  }
 
     
+}  */
 
-        bottom: -180px;
 
-        right: 40px;
+/* الشرط الأول لشاشات من 300px إلى 747px */
+@media (min-width: 300px) and (max-width: 747px) {
+    .top .cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .baby-tools1 img {
+        width: 40px;
+    }
+
+    .baby-tools1 {
+        bottom: 80px;
+        right: 30px;
         z-index: 1;
     }
 
     .baby-tools2 {
         z-index: 100;
         position: absolute;
-        bottom: -130%;
+        bottom: -65%;
     }
 
     .baby-tools3 {
         display: none;
     }
 }
-@media (min-width: 766px) and (max-width: 796px) {
-    .baby-tools1  img{
-        width: 50px;
+
+/* الشرط الثاني لشاشات من 748px إلى 1194px */
+@media (min-width: 748px) and (max-width: 1194px) {
+    .baby-tools1 img {
+        width: 40px;
     }
+
     .baby-tools1 {
-
-    
-
-        bottom: -180px;
-
-        right: 40px;
+        bottom: 80px;
+        right: 30px;
         z-index: 1;
     }
 
     .baby-tools2 {
         z-index: 100;
         position: absolute;
-        bottom: -105%;
+        bottom: -45%;
     }
 
     .baby-tools3 {
         display: none;
     }
 }
+@media (min-width: 1195px) and (max-width: 1200px) {
+  
+
+
+    .baby-tools2 {
+        z-index: 100;
+        position: absolute;
+        bottom: -43%;
+    }
+
+   
+}
+@media (min-width: 1201px) and (max-width: 1300px) {
+  
+
+
+    .baby-tools2 {
+        z-index: 100;
+        position: absolute;
+        bottom: -25%;
+    }
+
+   
+}
+@media (min-width: 1301px) and (max-width: 1532px) {
+  
+
+
+    .baby-tools2 {
+        z-index: 100;
+        position: absolute;
+        bottom: -20%;
+    }
+
+   
+}
+
+
+
+
+
+
 .top .cont .featur-1 h4 {
     color: #444157;
     text-transform: capitalize;

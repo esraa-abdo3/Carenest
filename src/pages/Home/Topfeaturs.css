@@ -7,6 +7,7 @@ body{
     background-color: rgb(238 247 251);
     background-color: rgb(215, 239, 249);
    overflow: hidden;
+   position: relative;
 
 }
 .baby-tools1 {
@@ -15,8 +16,9 @@ body{
 }
 .baby-tools2{
     position: absolute;
-    bottom:-55% ;
+    bottom:0%;
     left: 5%;
+    z-index: 1000;
 }
 .baby-tools3{
     position: absolute;
@@ -37,6 +39,7 @@ body{
     font-size: 38px;
 }
 .top .cont{
+
    
    
     padding-top: 50px;
@@ -90,55 +93,8 @@ body{
 
 
 
-/* @media (min-width: 300px) and (max-width:747px) {
-    .top .cont{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
 
-    .baby-tools1  img{
-        width: 40px;
-    }
-    .baby-tools1 {
-       
-
-
-
-        bottom: 80px;
-
-        right: 30px;
-        z-index: 1;
-    }
-
-    .baby-tools2 {
-        z-index: 100;
-        position: absolute;
-        bottom: -65%;
-    }
-
-    .baby-tools3 {
-        display: none;
-    }
-}
- @media(min-width:748px) and(max-width:800px){
-    .baby-tools1  img{
-        width: 40px;
-    }
-  
-
-  .baby-tools2{
-    width: 10px;
-  }
-
-    
-}  */
-
-
-/* الشرط الأول لشاشات من 300px إلى 747px */
-@media (min-width: 300px) and (max-width: 747px) {
+@media (min-width: 300px) and (max-width: 410px) {
     .top .cont {
         display: flex;
         flex-direction: column;
@@ -152,7 +108,7 @@ body{
     }
 
     .baby-tools1 {
-        bottom: 80px;
+        top: 15%;
         right: 30px;
         z-index: 1;
     }
@@ -160,22 +116,28 @@ body{
     .baby-tools2 {
         z-index: 100;
         position: absolute;
-        bottom: -65%;
+        bottom: 0;
     }
 
     .baby-tools3 {
         display: none;
     }
 }
+@media (min-width: 411px) and (max-width: 747px) {
+    .top .cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
 
-/* الشرط الثاني لشاشات من 748px إلى 1194px */
-@media (min-width: 748px) and (max-width: 1194px) {
     .baby-tools1 img {
         width: 40px;
     }
 
     .baby-tools1 {
-        bottom: 80px;
+     top: 15%;
         right: 30px;
         z-index: 1;
     }
@@ -183,49 +145,14 @@ body{
     .baby-tools2 {
         z-index: 100;
         position: absolute;
-        bottom: -45%;
+        bottom: 0;
     }
 
     .baby-tools3 {
         display: none;
     }
 }
-@media (min-width: 1195px) and (max-width: 1200px) {
-  
 
-
-    .baby-tools2 {
-        z-index: 100;
-        position: absolute;
-        bottom: -43%;
-    }
-
-   
-}
-@media (min-width: 1201px) and (max-width: 1300px) {
-  
-
-
-    .baby-tools2 {
-        z-index: 100;
-        position: absolute;
-        bottom: -25%;
-    }
-
-   
-}
-@media (min-width: 1301px) and (max-width: 1532px) {
-  
-
-
-    .baby-tools2 {
-        z-index: 100;
-        position: absolute;
-        bottom: -20%;
-    }
-
-   
-}
 
 
 
